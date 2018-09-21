@@ -1,0 +1,37 @@
+f = 1e6 / (TOP + 1)
+TOP = 1e6 / f - 1
+
+
+t1 = 1e6 / f1 -1
+t2 = 1e6 / f2 -1
+
+f2 = f1 - 500
+
+t2 = 1e6 / (f1 - 501)
+
+
+
+
+t2 = 1e6 / (f1 - 500) - 1
+
+t2 = 1e6 / ((1e6 / t1) + 500) - 1
+
+
+t2 = 1e6 / ((1e6 + 500 * t1/ t1)
+
+t2 = 1e6 * t1 / (1e6 + 500 * t1)
+
+
+Fast PWM
+
+f = f_clk / (N * (1 + TOP))
+
+
+CTC - Toggle Mode
+
+f = f_clk / (2 * N * (1 + OCR0A))
+
+OCR0A =  f_clk / (2 * N * f_out) - 1
+
+def get_ocr0a(f_out, f_clk, N):
+    return f_clk / (2 * N * f_out) - 1
